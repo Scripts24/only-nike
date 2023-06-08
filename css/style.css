@@ -148,95 +148,62 @@ span {
 
 /*PRODUCTOS*/
 
-/*.productos article{
-    background-position: center;
-    background-size: cover;
-}
-
-.productos article:nth-child(1){
-    background-image: url('../assets/img/collection-1.png');
-}
-
-.productos article:nth-child(2){
-    background-image: url('../assets/img/collection-2.png');
-}
-
-.productos article:nth-child(3){
-    background-image: url('../assets/img/collection-3.png');
-}
-
-.productos article:nth-child(4){
-    background-image: url('../assets/img/collection-4.png');
-}
-
-.productos article:nth-child(5){
-    background-image: url('../assets/img/collection-6.png');
-}
-
-.productos article:nth-child(6){
-    background-image: url('../assets/img/collection-7.png');
-}
-
-.productos article:nth-child(7){
-    background-image: url('../assets/img/collection-8.png');
-}*/
-
-.slide .container-product{
-    display: flex;
+.slide .container-product {
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items    : center;
 }
 
-.productos .info-products{
+.productos .info-products {
     margin: 0 2rem;
 }
 
-.productos .info-products::before{
-    content: "";
-    height:4.3rem;
-    width: 2px;
-    display: inline-block;
-    background:rgb(226, 43, 43);
-    position: absolute;
-    top: 50%;
-    margin: -.7rem;
+.productos .info-products::before {
+    content   : "";
+    height    : 2.5rem;
+    width     : 3px;
+    display   : inline-block;
+    background: rgba(226, 43, 43, 0.514);
+    position  : absolute;
+    top       : 55%;
+    margin    : -.7rem;
 }
 
-.product-name{
+.product-name {
     font-size: 2rem;
-    color: rgb(226, 43, 43);
+    color    : rgb(226, 43, 43);
 }
 
-.productos .description{
+.productos .description {
     font-size: 1.5rem;
-    color: #fff;
+    color    : #fff;
 }
 
-.productos .price{
+.productos .price {
     font-size: 1.7rem;
-    color: rgb(226, 43, 43);
+    color    : rgb(226, 43, 43);
 }
 
-.img-slide img{
-    width: 600px;
-    height: 400px;
+.img-slide img {
+    width : 650px;
+    height: 380px;
 }
 
 /*Clases de FullPage para flechas Slide*/
 
-.fp-controlArrow.fp-next,.fp-controlArrow.fp-prev{
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
     top: 95%;
 }
 
-.fp-controlArrow.fp-prev{
-    left: 50%;
+.fp-controlArrow.fp-prev {
+    left        : 50%;
     border-width: 20px 20px 20px 0;
     border-color: transparent rgb(226, 43, 43) transparent transparent;
 }
 
-.fp-controlArrow.fp-next{
-    right: 40%;
+.fp-controlArrow.fp-next {
+    right       : 40%;
     border-width: 20px 0 20px 20px;
-    border-color: transparent  transparent transparent rgb(226, 43, 43);
+    border-color: transparent transparent transparent rgb(226, 43, 43);
 }
