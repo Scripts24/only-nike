@@ -47,6 +47,63 @@ p{
     font-family: 'Oswald', sans-serif;  
 }
 
+/*NAV -- CLASES DE FULLPAGE*/
+
+#fp-nav ul li a span{
+    background: rgb(226, 43, 43);
+}
+
+#fp-nav ul li .fp-tooltip{
+    color: rgb(226, 43, 43);
+}
+
+/*NAV */
+
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav a .logo{
+    width: 4rem;
+}
+
+.nav a span{
+font-size: 2rem;
+}
+
+.nav li, .nav a{
+    display: inline-block;
+    margin: .8rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    color:rgb(226, 43, 43) ;
+    transition: .5s ease;
+}
+
+.nav li.active {
+    border-bottom: 2px solid #fff;
+}
+
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a, .menu li:hover a{
+    color: #fff;
+}
+
+
+
 /*HEADER*/
 
 .header {
@@ -63,7 +120,7 @@ p{
 .header p{
     text-align: center;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 span{
