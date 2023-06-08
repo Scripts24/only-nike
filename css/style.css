@@ -2,90 +2,105 @@
 
 
 
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    list-style: none;
+* {
+    margin         : 0;
+    padding        : 0;
+    outline        : none;
+    box-sizing     : border-box;
+    list-style     : none;
     text-decoration: none;
 }
 
-body{
+body {
     font-family: 'Lato', sans-serif;
-    font-size: 1.1rem;
+    font-size  : 1.1rem;
 }
 
-.fa-chevron-down{
-    position: absolute;
-    color: #fff;
-    font-size: 2rem;
+.fa-chevron-down {
+    position   : absolute;
+    color      : #fff;
+    font-size  : 2rem;
     font-weight: bold;
-    bottom: 3%;
-    left: 50%;
-    animation: up-down 2s ease infinite;
+    bottom     : 3%;
+    left       : 50%;
+    animation  : up-down 2s ease infinite;
 }
 
 @keyframes up-down {
-    0%{ transform: translateY(20px);}
-    25%{ transform: translateY(0);}
-    100%{ transform: translateY(20px);}
+    0% {
+        transform: translateY(20px);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
 }
 
-.container-title{
-    text-align: center;
+.container-title {
+    text-align    : center;
     text-transform: uppercase;
 }
 
-h1, h2{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
-    color: #fff;
+    color      : #fff;
     font-family: 'Lato', sans-serif;
+    text-align : center;
 }
 
-p{
-    font-family: 'Oswald', sans-serif;  
+p {
+    font-family: 'Oswald', sans-serif;
 }
 
 /*NAV -- CLASES DE FULLPAGE*/
 
-#fp-nav ul li a span{
+#fp-nav ul li a span {
     background: rgb(226, 43, 43);
 }
 
-#fp-nav ul li .fp-tooltip{
+#fp-nav ul li .fp-tooltip {
     color: rgb(226, 43, 43);
 }
 
 /*NAV */
 
-.nav{
-    position: fixed;
-    display: flex;
+.nav {
+    position       : fixed;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-    width: 100%;
-    margin: 0;
-    padding: 10px 20px;
+    align-items    : center;
+    z-index        : 10;
+    width          : 100%;
+    margin         : 0;
+    padding        : 10px 20px;
 }
 
-.nav a .logo{
+.nav a .logo {
     width: 4rem;
 }
 
-.nav a span{
-font-size: 2rem;
+.nav a span {
+    font-size: 2rem;
 }
 
-.nav li, .nav a{
-    display: inline-block;
-    margin: .8rem;
+.nav li,
+.nav a {
+    display       : inline-block;
+    margin        : .8rem;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.1rem;
-    color:rgb(226, 43, 43) ;
-    transition: .5s ease;
+    font-family   : 'Oswald', sans-serif;
+    font-size     : 1.1rem;
+    color         : rgb(226, 43, 43);
+    transition    : .5s ease;
 }
 
 .nav li.active {
@@ -94,11 +109,12 @@ font-size: 2rem;
 
 .menu li a {
     transition: .5s ease;
-    margin: 0;
-    padding: 0;
+    margin    : 0;
+    padding   : 0;
 }
 
-.menu li.active a, .menu li:hover a{
+.menu li.active a,
+.menu li:hover a {
     color: #fff;
 }
 
@@ -107,25 +123,120 @@ font-size: 2rem;
 /*HEADER*/
 
 .header {
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.075)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%), url(../assets/img/banner.jpg);
-    background-size: cover;
+    background         : linear-gradient(0deg, rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.075)), linear-gradient(248.75deg, rgba(0, 159, 157, 0.41) 0%, rgba(15, 10, 60, 0.41) 38.46%), url(../assets/img/banner.jpg);
+    background-size    : cover;
     background-position: center;
 }
 
-.header h1{
-    font-size: 3rem;
+.header h1 {
+    font-size : 3rem;
     font-style: italic;
 }
 
-.header p{
+.header p {
     text-align: center;
-    color: #fff;
-    font-size: 1.5rem;
+    color     : #fff;
+    font-size : 1.5rem;
 }
 
-span{
-color: rgb(226, 43, 43);
-font-weight: 700;
-font-size: 3rem;
-font-style: italic;
+span {
+    color      : rgb(226, 43, 43);
+    font-weight: 700;
+    font-size  : 3rem;
+    font-style : italic;
+}
+
+/*PRODUCTOS*/
+
+/*.productos article{
+    background-position: center;
+    background-size: cover;
+}
+
+.productos article:nth-child(1){
+    background-image: url('../assets/img/collection-1.png');
+}
+
+.productos article:nth-child(2){
+    background-image: url('../assets/img/collection-2.png');
+}
+
+.productos article:nth-child(3){
+    background-image: url('../assets/img/collection-3.png');
+}
+
+.productos article:nth-child(4){
+    background-image: url('../assets/img/collection-4.png');
+}
+
+.productos article:nth-child(5){
+    background-image: url('../assets/img/collection-6.png');
+}
+
+.productos article:nth-child(6){
+    background-image: url('../assets/img/collection-7.png');
+}
+
+.productos article:nth-child(7){
+    background-image: url('../assets/img/collection-8.png');
+}*/
+
+.slide .container-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.productos .info-products{
+    margin: 0 2rem;
+}
+
+.productos .info-products::before{
+    content: "";
+    height:4.3rem;
+    width: 2px;
+    display: inline-block;
+    background:rgb(226, 43, 43);
+    position: absolute;
+    top: 50%;
+    margin: -.7rem;
+}
+
+.product-name{
+    font-size: 2rem;
+    color: rgb(226, 43, 43);
+}
+
+.productos .description{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.productos .price{
+    font-size: 1.7rem;
+    color: rgb(226, 43, 43);
+}
+
+.img-slide img{
+    width: 600px;
+    height: 400px;
+}
+
+/*Clases de FullPage para flechas Slide*/
+
+.fp-controlArrow.fp-next,.fp-controlArrow.fp-prev{
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev{
+    left: 50%;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent rgb(226, 43, 43) transparent transparent;
+}
+
+.fp-controlArrow.fp-next{
+    right: 40%;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent  transparent transparent rgb(226, 43, 43);
 }
