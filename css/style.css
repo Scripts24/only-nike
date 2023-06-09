@@ -207,3 +207,139 @@ span {
     border-width: 20px 0 20px 20px;
     border-color: transparent transparent transparent rgb(226, 43, 43);
 }
+
+/*CONTACTO*/
+
+footer {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.form-box {
+    width        : 400px;
+    padding      : 30px;
+    background   : rgba(12, 12, 12, 0.774);
+    border-radius: .5rem;
+    margin-top   : 4.7rem;
+}
+
+.form-box h4 {
+    margin-bottom: .6rem;
+}
+
+.form-box .user-box {
+    position: relative;
+}
+
+.form-box .user-box input,
+textarea {
+    width        : 100%;
+    padding      : 10px 0;
+    font-size    : 16px;
+    color        : #fff;
+    margin-bottom: .6rem;
+    border       : none;
+    border-bottom: 1px solid #fff;
+    background   : transparent;
+}
+
+.form-box .user-box label {
+    position      : absolute;
+    top           : 0;
+    left          : 0;
+    padding       : 10px 0;
+    font-size     : 16px;
+    color         : #fff;
+    pointer-events: none;
+    transition    : .5s;
+}
+
+.form-box .user-box textarea:focus~label,
+.form-box .user-box input:focus~label,
+.form-box .user-box input:valid~label {
+    top      : -20px;
+    left     : 0;
+    color    : #bdb8b8;
+    font-size: .6rem;
+}
+
+.form-box form button {
+    position      : relative;
+    display       : inline-block;
+    padding       : 8px 20px;
+    font-size     : .8rem;
+    color         : #fff;
+    text-transform: uppercase;
+    overflow      : hidden;
+    transition    : .5s;
+    margin-top    : .4rem;
+    letter-spacing: 4px;
+    background    : rgba(12, 12, 12, 0.774);
+    border        : 1px solid rgb(226, 43, 43);
+}
+
+.form-box button:hover {
+    background   : rgb(226, 43, 43);
+    color        : #fff;
+    border-radius: 5px;
+    box-shadow   :
+        0 0 20px rgb(226, 43, 43),
+        0 0 40px rgb(226, 43, 43),
+        0 0 60px rgb(226, 43, 43);
+}
+
+.form-box button span {
+    position: absolute;
+    display : block;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.form-box button span {
+    bottom    : 5px;
+    left      : -100%;
+    width     : 100%;
+    height    : 3px;
+    background: linear-gradient(90deg, transparent, rgb(226, 43, 43));
+    animation : btn-anim1 2s linear infinite;
+}
+
+.right {
+    display       : flex;
+    flex-direction: column;
+    margin        : 1rem 0;
+}
+
+.right .socials .socials-title {
+    margin-bottom: .8rem;
+}
+
+.right .socials i {
+    font-size : 1.8rem;
+    color     : rgb(226, 43, 43);
+    margin    : 0 2.5rem;
+    transition: all .2s ease;
+}
+
+.right .socials i:hover {
+    color    : #fff;
+    transform: rotateY(-360deg);
+}
+
+.developed {
+    width        : 80%;
+    height       : 3.5rem;
+    border-radius: .4rem;
+    border       : .1rem solid rgba(12, 12, 12, 0.774);
+    margin       : 1rem 2rem;
+}
