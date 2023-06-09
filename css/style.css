@@ -63,7 +63,6 @@ p {
 
 /* Whatsapp fixed*/ 
 
-
 .boton-wsp .fa-whatsapp {
     position     : fixed;
     text-align   : center;
@@ -93,8 +92,6 @@ p {
     color: rgb(226, 43, 43);
     font-size: 1rem;
 }
-
-
 
 /*NAV */
 
@@ -142,7 +139,6 @@ p {
 .menu li:hover a {
     color: #fff;
 }
-
 
 /*HEADER*/
 
