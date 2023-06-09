@@ -61,6 +61,28 @@ p {
     font-family: 'Oswald', sans-serif;
 }
 
+/* Whatsapp fixed*/ 
+
+
+.boton-wsp .fa-whatsapp {
+    position     : fixed;
+    text-align   : center;
+    font-size    : 2.2rem;
+    color        : #fff;
+    width        : 2rem;
+    height       : 2rem;
+    bottom       : 10rem;
+    right        : 6%;
+    border-radius: 50%;
+    line-height  : 1;
+    background   : rgb(226, 43, 43);
+    z-index      : 10;
+}
+
+.boton-wsp .fa-whatsapp:hover {
+    background-color:rgb(97, 202, 87);
+}
+
 /*NAV -- CLASES DE FULLPAGE*/
 
 #fp-nav ul li a span {
@@ -69,7 +91,10 @@ p {
 
 #fp-nav ul li .fp-tooltip {
     color: rgb(226, 43, 43);
+    font-size: 1rem;
 }
+
+
 
 /*NAV */
 
@@ -117,7 +142,6 @@ p {
 .menu li:hover a {
     color: #fff;
 }
-
 
 
 /*HEADER*/
