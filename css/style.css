@@ -104,6 +104,10 @@ p {
 
 /* Whatsapp fixed*/
 
+.boton-wsp{
+    display: none;
+}
+
 .boton-wsp .fa-whatsapp {
     position     : fixed;
     text-align   : center;
@@ -111,11 +115,11 @@ p {
     color        : #fff;
     width        : 2rem;
     height       : 2rem;
-    bottom       : 10rem;
+    bottom       : 3rem;
     right        : 6%;
     border-radius: 50%;
     line-height  : 1;
-    background   : rgb(226, 43, 43);
+    background   : black;
     z-index      : 10;
 }
 
@@ -124,6 +128,10 @@ p {
 }
 
 /*NAV -- CLASES DE FULLPAGE*/
+
+#fp-nav{
+    display: none;
+}
 
 #fp-nav ul li a span {
     background: rgb(226, 43, 43);
