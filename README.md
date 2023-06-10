@@ -8,6 +8,7 @@
 * Font Awesome
 * Animate Style
 * Google Fonts
+* Pure CSS Loader
 ---
 #### Realizada por Patricia Atanasoff
 
