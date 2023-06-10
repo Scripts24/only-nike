@@ -12,9 +12,50 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-size  : 1.1rem;
+    font-family     : 'Lato', sans-serif;
+    font-size       : 1.1rem;
+    background-color: black;
 }
+
+/* Preloader*/
+
+.centrado {
+    height          : 100vh;
+    background-color: var(--black);
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+lds-dual-ring {
+    display: inline-block;
+    width  : 80px;
+    height : 80px;
+}
+
+.lds-dual-ring:after {
+    content      : " ";
+    display      : block;
+    width        : 64px;
+    height       : 64px;
+    margin       : 8px;
+    border-radius: 50%;
+    border       : 6px solid #fff;
+    border-color : #fff transparent #fff transparent;
+    animation    : lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Arrow down*/
 
 .fa-chevron-down {
     position   : absolute;
@@ -176,9 +217,9 @@ span {
 }
 
 .productos .info-products {
-    margin: 0 2rem;
+    margin      : 0 2rem;
     padding-left: .5rem;
-    border-left: 2px solid rgb(226, 43, 43);
+    border-left : 2px solid rgb(226, 43, 43);
 }
 
 .product-name {
@@ -457,6 +498,10 @@ textarea {
         font-size: 1rem;
     }
 
+    .productos .info-products {
+        margin: 0 1rem;
+    }
+
     .product-name {
         font-size: 1rem;
     }
@@ -475,29 +520,34 @@ textarea {
 @media screen and (max-width: 395px) {
 
     .nav a .logo {
-        width: 1.5rem;
+        width: 1.7rem;
     }
 
     .nav a span {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     .nav li,
     .nav a {
-        font-size: .5rem;
-    }
-
-    .product-name {
-        font-size: .8rem;
-    }
-
-    .productos .price {
         font-size: .6rem;
     }
 
+    .productos .info-products {
+        margin: 0 .4rem;
+    }
+
+    .product-name {
+        font-size: .9rem;
+    }
+
+    .productos .price {
+        font-size: .7rem;
+    }
+
     .img-slide img {
-        width : 180px;
-        height: 110px;
+        width       : 180px;
+        height      : 110px;
+        margin-right: 1.5rem;
     }
 
     .boton-wsp {
@@ -510,8 +560,8 @@ textarea {
     }
 
     .right .socials i {
-        font-size : 1.5rem;
-        margin    : 0 2.3rem;
+        font-size: 1.5rem;
+        margin   : 0 2.3rem;
     }
 
 }
